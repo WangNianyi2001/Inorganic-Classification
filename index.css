@@ -1,0 +1,18 @@
+main>div {
+	display: inline-block;
+	margin-right: 1rem;
+}
+
+.material { padding: .4ex .5ex; }
+
+#redox .material { cursor: pointer; }
+
+td, .material { text-align: center; }
+
+.less { background-color: lightgray; }
+
+.nonexist { background-image: linear-gradient(to right top, transparent, transparent 48%, black 49%, black 51%, transparent 52%, transparent); }
+
+.more { background-color: lightblue; }
+
+.selected { outline: 3px solid red; }
