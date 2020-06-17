@@ -7,7 +7,7 @@ const toHTML = (element, {H = 0, OH = 0, O = 0, charge = 0}) =>
 	element +
 	(O ? 'O' + (O === 1 ? '' : '<sub>' + O + '</sub>') : '') +
 	(OH ? (OH === 1 ? 'OH' : '(OH)' + '<sub>' + OH + '</sub>') : '') +
-	(charge ? ('<sup>' + (charge <  0 ? '-' : '+') + (Math.abs(charge) === 1 ? '' : Math.abs(charge)) + '</sup>') : '');
+	(charge ? ('<sup>' + (Math.abs(charge) === 1 ? '' : Math.abs(charge)) + (charge <  0 ? '-' : '+') + '</sup>') : '');
 const oxidationToRow = oxidation => +oxidation + 4;
 const rowToOxidation = row => (i => i === 0 ? '0' : i > 0 ? '+' + i : '' + i)(row - 4);
 
